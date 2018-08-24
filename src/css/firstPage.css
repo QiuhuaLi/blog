@@ -1,0 +1,240 @@
+
+/****
+基础样式
+*****/
+html{
+	font-size: 16px;
+	width: 100%;
+	font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+	color: #222
+}
+
+ol,ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #222;
+}
+::selection{
+	background: #b3d4fc;
+	text-shadow: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+/****
+功能样式
+****/
+.center-block{
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+.clear::before,.clear::after{
+	content: "";
+	display: table;
+}
+.clear::after{
+	clear: both;
+}
+.hide{
+	display: none;
+}
+.invisible{
+	visibility: hidden!important;
+}
+/**iconfont图标**/
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/****
+结构样式
+****/
+html{
+	width:100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+/**侧边导航**/
+.container>.slider{
+    background-color: #DBE7FD;
+    width: 14.5625rem;
+    height: 100%;
+    position: fixed;
+}
+@media only screen and (max-width:49rem){
+	.container>.slider{
+		display: none;
+	}
+}
+.container>.slider .head{
+	width: 100%;
+	height:230px;
+	text-align: center;
+	font-size: 20px;
+	color: #444;
+	padding-top:40px;
+	padding-bottom: 0.5rem;
+}
+.container>.slider>.head>img{
+    width: 140px;
+    height: 140px;
+	border-radius: 50%;
+}
+.container>.slider>ul>li>i{
+	margin-right: 1rem;
+	font-size: 20px;
+	font-weight: normal;
+	color: #333;
+}
+.container>.slider>ul>li{
+	padding-left: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #999;
+}
+.container>.slider>ul>li>a{
+	color: #333;
+}
+/**顶部导航**/
+@media only screen and (min-width:49rem){
+	.container>section.head{
+		display: none;
+	}
+}
+@media only screen and (max-width:49rem){
+	.container>section.head{
+		width: 100%;
+		height: 3rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		overflow: hidden;
+		background: #666;
+	}
+	.container>section.head>div{
+		width: 3rem;
+		height: 100%;
+		position: absolute;
+		text-align: center;
+		padding-top: 1rem;
+		top: 0;
+		left: 0;
+	}
+	.container>section.head div>i{
+		color: #999;
+	}
+	.container>section.head h1{
+		margin: 0;
+		text-align: center;
+		font-size: 22px;
+		line-height: 3rem;
+		font-weight: normal;
+	}
+	.container>section.head h1>a{
+		color: #999;
+	}
+	.container>section.head>a{
+		width: 3rem;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+	.container>section.head a>img{
+		width: 3rem;
+		height: 3rem;
+		vertical-align: center;
+		border-radius: 50%;
+		background: transparent;
+	}
+}
+/**文章主体**/
+.container>.artical{
+    background-color:rgba(219,231,253,0.4) ;
+    position: absolute;
+    padding-left: 2rem;
+    top:0;
+    left:14.5625rem;
+}
+@media only screen and (max-width:49rem){
+	.container>.artical{
+		top: 3rem;
+		left: 0;
+	}
+}
+@media only screen and (max-width:26.5625rem){
+	.container>.artical{
+		top: 3rem;
+		left: 0;
+		padding-left: 1rem;
+	}
+}
+.container>.artical>.artical-item{
+	border-bottom: 1px solid #ddd;
+	box-sizing: border-box;
+	padding-bottom: 2rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.container>.artical>.artical-item h1{
+	color: #333;
+	padding-left: 3rem;
+	font-weight: normal;
+}
+@media only screen and (max-width:26.5625rem){
+	.container>.artical>.artical-item h1{
+		padding-left: 2rem;
+	}
+}
+.container>.artical>.artical-item p{
+	padding: 0 5px 0.5rem 0;
+	line-height: 1.8rem;
+	box-sizing:border-box;
+}
+.container>.artical>.artical-item>a{
+	position: absolute;
+	bottom: 1rem;
+	right: 4rem;
+
+}
+@media only screen and (max-width:26.5625rem){
+	.container>.artical>.artical-item>a{
+		right: 2rem;
+	}
+}
+.container>.artical>.artical-item>a:hover{
+	text-decoration: underline;
+	color: #004869;
+}
+.container>.artical>.artical-item>span{
+	color: #999;
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+}
